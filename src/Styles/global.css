@@ -1,9 +1,9 @@
 :root {
-  --background: #232946;
+  --background: #16161a;
   --headline: #fffffe;
-  --copy: #b8c1ec;
-  --accent: #eebbc3;
-  --accent-text: #232946;
+  --copy: #94a1b2;
+  --accent: #7f5af0;
+  --accent-text: #fffffe;
 }
 
 * {
