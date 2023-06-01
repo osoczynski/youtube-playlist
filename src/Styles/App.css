@@ -15,16 +15,45 @@ body {
   max-width: 1920px;
   font-family: sans-serif;
   background-color: var(--background);
+  font-size: 16px;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    font-size: 28px;
+  }
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 40px;
-  margin-top: 60px;
+  gap: 2rem;
+  margin-top: 2rem;
   max-width: 1000px;
-  padding: 30px;
+  padding: 2rem;
   margin: 0 auto;
 }
 @media only screen and (max-width: 800px) {
@@ -35,38 +64,37 @@ body {
 
 .headline {
   color: var(--headline);
-  font-size: 54px;
   margin-bottom: 2px;
 }
 
 p,
 label {
   color: var(--copy);
-  font-size: 18px;
+  font-size: 1rem;
   letter-spacing: 1.5px;
-  line-height: 34px;
+  line-height: 2rem;
 }
 
 .form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 .form input {
-  padding: 20px 15px;
+  padding: 1.5rem 1rem;
   width: 100%;
   border: none;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 1rem;
 }
 .form button {
-  margin-top: 10px;
-  padding: 20px;
+  margin-top: 1rem;
+  padding: 1.5rem;
   border-radius: 3px;
   font-weight: bold;
   background-color: var(--accent);
   color: var(--accent-text);
   border: none;
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
   width: 100%;
 }
@@ -74,10 +102,10 @@ label {
 .videosContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  gap: 1rem;
   list-style-type: none;
   padding-left: 0;
-  margin: 30px;
+  margin: 2rem;
 }
 
 li {
@@ -88,11 +116,11 @@ li {
 
 .deleteBtn {
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 0.3rem;
+  right: 0.3rem;
   border: none;
   border-radius: 100%;
-  font-size: 20px;
+  font-size: 1rem;
   cursor: pointer;
 }
 .deleteBtn:hover {

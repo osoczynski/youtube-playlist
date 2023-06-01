@@ -14,6 +14,7 @@ const App = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
   const playlist = state.playlist;
+  console.log(playlist);
 
   const saveVideoHandler = (e) => {
     e.preventDefault();
@@ -49,10 +50,10 @@ const App = () => {
     <>
       <div className="container">
         <div>
-          <h1 className="headline">My YouTube Resource Gallery</h1>
+          <h1 className="headline">My YouTube Gallery</h1>
           <p>
-            The perfect app to keep track of valuable resources while learning
-            to code. As you come across a helpful video, add the id here.
+            The perfect app to keep track of valuable resources. As you come
+            across a cool video, add it here.
           </p>
         </div>
 
